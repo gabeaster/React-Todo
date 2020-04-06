@@ -77,16 +77,18 @@ clearCompleted = e => {
     console.log('rendering...');
     return (
       <div className="App">
+        <div className="container" >
         <div className="header">
-          <h1>Get This Stuff Done</h1>
-          <TodoForm addTask={this.addTask}/>
+          <h1>To Do List</h1>
         </div>
+        <TodoForm addTask={this.addTask}/>
         <TodoList 
           todos={this.state.todos}
           toggleTask={this.toggleTask}
           clearCompleted={this.clearCompleted}
         />
 
+      </div>
       </div>
     );
   }

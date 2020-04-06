@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/backgroundimg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 5% 0;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 50vw;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #5F1436;
+    width: 45%;
+    text-align: center;
+    margin: 2.5% 0;
+    cursor: pointer;
+}
+
+.itemcompleted {
+    background-color: #5F1436;
+    text-decoration: line-through;
+    width: 40%;
+    text-align: center;
+    margin: 5% 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    margin-bottom: 5%;
+}
+
+form > input {
+    border: 0;
+    width: 45%;
+    background-color: #5F1436;
+    font-size: 1rem;
+    outline: 0;
+    color: white;
+    border-bottom: 2px solid #5F1436;
+    margin-right: 7%;
+}
+
+button {
+    background-color: #5F1436;
+    border: 2px solid #5F1436;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1% 5%;
+}
+
+input::placeholder {
+    color: #5F1436;
+    opacity: 1;
+}
+
+.clearBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0;
+}
+
+
+
+

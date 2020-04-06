@@ -110,6 +110,7 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     margin: 2.5% 0;
+    white-space: nowrap;
 }
 
 

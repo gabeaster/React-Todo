@@ -65,11 +65,12 @@ h1 {
 }
 
 .itemcompleted {
-    background-color: #5F1436;
+    background-color: #A55A79;
+    color: black;
     text-decoration: line-through;
-    width: 40%;
+    width: 45%;
     text-align: center;
-    margin: 5% 0;
+    height: 6vh;
 }
 
 form {
@@ -84,7 +85,7 @@ form > input {
     border: 0;
     width: 45%;
     background-color: #5F1436;
-    font-size: 1rem;
+    font-size: 1.2rem;
     outline: 0;
     color: white;
     border-bottom: 2px solid #5F1436;

@@ -17,25 +17,42 @@ const todos = [
 
 class App extends React.Component {
 // design `App` to be the parent component of your application.
+// you will need a place to store your state in this component.
+// this component is going to take care of state, and any change handlers you need to work with your state
+
+//here is my constructor function. I'm calling super() and storing state here. 
   constructor () {
     super();
     this.state = {
-      todos
+      todos //same as === groceries: groceries
     };
   }
 
+//here is my function to add new tasks
+  addTask = (e, item) => {
+    e.preventDefault();
+    const newTask = {
+      task: item,
+      id: Date.now(),
+      completed: false
+    };
+    this.setState({
+      todos: [...this.state.todos, newTask]
+    });
+  };
 
 
 
-  // you will need a place to store your state in this component.
   
-  // this component is going to take care of state, and any change handlers you need to work with your state
+  
+  
   render() {
+    console.log('rendering...');
     return (
       <div className="App">
         <div className="header">
           <h1>Get This Stuff Done</h1>
-          <TodoForm />
+          <TodoForm addTask={this.addTask}/>
         </div>
         <TodoList 
           todos={this.state.todos}

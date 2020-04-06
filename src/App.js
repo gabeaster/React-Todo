@@ -41,6 +41,25 @@ class App extends React.Component {
     });
   };
 
+//here is my function to toggle completed tasks 
+toggleTask = taskId => {
+  console.log(taskId);
+  //map over array
+  //when we find the item we clicked, toggle the completed field
+  //otherwise, return the item untouched
+  this.setState({
+    todos: this.state.todos.map(item => {
+      if (taskId === item.id) {
+        return {
+          ...item,
+          completed: !item.completed
+        };
+      }
+      return item;
+    })
+  });
+};
+
 
 
   
@@ -56,6 +75,7 @@ class App extends React.Component {
         </div>
         <TodoList 
           todos={this.state.todos}
+          toggleTask={this.toggleTask}
         />
 
       </div>

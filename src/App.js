@@ -60,6 +60,14 @@ toggleTask = taskId => {
   });
 };
 
+//here is my function to clear completed tasks
+clearCompleted = e => {
+  e.preventDefault();
+  this.setState({
+    todos: this.state.todos.filter(task => !task.completed)
+  });
+};
+
 
 
   
@@ -76,6 +84,7 @@ toggleTask = taskId => {
         <TodoList 
           todos={this.state.todos}
           toggleTask={this.toggleTask}
+          clearCompleted={this.clearCompleted}
         />
 
       </div>

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
 
 html,
 body {
@@ -42,6 +46,14 @@ h1 {
     width: 50vw;
 }
 
+.container {
+    padding: 2rem;
+    background-color: rgba(5, 2, 5, 0.4);
+    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 15px 15px 14px -11px #111;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -62,15 +74,18 @@ h1 {
     text-align: center;
     margin: 2.5% 0;
     cursor: pointer;
+    height: 48px;
+    border-radius: 5px;
 }
 
 .itemcompleted {
     background-color: #A55A79;
     color: black;
+    margin: 2.5% 0;
     text-decoration: line-through;
     width: 45%;
     text-align: center;
-    height: 6vh;
+    height: 48px;
 }
 
 form {
@@ -90,14 +105,16 @@ form > input {
     color: white;
     border-bottom: 2px solid #5F1436;
     margin-right: 7%;
+    border-radius: 5px;
 }
 
 button {
-    background-color: #5F1436;
-    border: 2px solid #5F1436;
-    color: white;
+    background-color: #000;
+    border: 0.5px solid #FFD2F1;
+    color: #FFD2F1;
     font-size: 1.2rem;
     padding: 1% 5%;
+    border-radius: 10px;
 }
 
 input::placeholder {
@@ -109,8 +126,9 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.5% 0;
+    margin: 15% 0 2.5% 0;
     white-space: nowrap;
+
 }
 
 
